@@ -1,0 +1,16 @@
+while (($#)); do
+ODD_PARAM="${1}"
+shift
+EVEN_PARAM="${1}"
+shift || break
+PATTERN_NAME="${ODD_PARAM}"
+PATTERN_VALUE="${EVEN_PARAM}"
+if [[ $PATTERN_NAME  == __* ]]; then
+	CAPTURING_GROUP='\('"${PATTERN_VALUE}"'\)'
+	SEARCH="${SEARCH}""${CAPTURING_GROUP}"
+else
+	SEARCH="${SEARCH}""${PATTERN_VALUE}"
+fi
+done
+REPLACE="${ODD_PARAM}"
+sed "s${SEARCH}${REPLACE}"
