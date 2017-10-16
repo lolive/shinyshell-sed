@@ -11,6 +11,8 @@ This package contains the following functions:
 
 ## search_and_replace  :
 
+Simplify the writing of a sed 's/X/Y'.
+
 (Note: This sed command matches a search pattern X and replace it with  pattern Y).
 Arguments of this function are given like this:
  search_and_replace DESCRIPTION1 REGEXP1 DESCRIPTION2 REGEXP2 ... REPLACE_PATTERN
