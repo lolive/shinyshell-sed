@@ -8,10 +8,10 @@ $ str_delete  : ""
 
 This package contains the following functions:
 
-<pre>
 
 ## search_and_replace  :
 
+<pre>
 Simplify the writing of a sed 's/X/Y'.
 
 (Note: This sed command matches a search pattern X and replace it with  pattern Y).
@@ -27,11 +27,11 @@ Important note: If your description starts with '__', the following regexp is a 
 
 Example:
 search_and_replace ANY ".*" __WORD_WITHOUT_SLASH "[^ /]*" SLASH '/' END_OF_LINE '.*' 'Word without slash: \1'
-
 </pre>
-<pre>
+
 
 ## str_delete  :
 
-
+<pre>
 </pre>
+
