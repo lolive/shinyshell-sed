@@ -1,6 +1,6 @@
-Simplify the writing of a sed 's/X/Y'.
+Simplify the writing of a sed 's/X/Y/g'.
 
-(Note: This sed command matches the first occurence of search pattern X per line and replace it with  pattern Y).
+(Note: This sed command matches all occurences of search pattern X and replace them with  pattern Y).
 Arguments of this function are given like this:
  search_and_replace DESCRIPTION1 REGEXP1 DESCRIPTION2 REGEXP2 ... REPLACE_PATTERN
 
