@@ -13,4 +13,4 @@ else
 fi
 done
 REPLACE="${ODD_PARAM}"
-sed "s${SEARCH}${REPLACE}"
+sed "s${SEARCH}${REPLACE}g"
